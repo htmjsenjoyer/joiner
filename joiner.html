@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Entrando</title>
+	<script>
+		window.onload = function()
+		{
+			const params = new URLSearchParams(window.location.search);
+			const PlaceId = params.get('PlaceId');
+			const JobId = params.get('JobId');
+
+			if (PlaceId && JobId)
+			{
+				window.location.href = `roblox://placeID=${PlaceId}&gameInstanceId=${JobId}`;
+			}
+		};
+	</script>
+</head>
+<body></body>
+</html>
